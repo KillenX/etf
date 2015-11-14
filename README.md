@@ -1,3 +1,3 @@
 # etf
-Ovo sam napravio da imam gdje da drzim projekte sa programiranja
+Ovo sam napravio da imam gdje da drzim projekte sa programiranja,za laksi pristup
 
