@@ -12,24 +12,21 @@ void Rotacija::print(ostream & str)
 
 string Rotacija::operator()(string str)
 {
-	const char* in = str.c_str();
-	size_t lim = str.length();
-	std::cout << str[1];
-	string out;
+	string out=str;
 	if (mod)
 	{
 		for (int i = 0; i < str.length(); i++)
 		{
-			if (isupper(in[i]))
+			if (isupper(str[i]))
 			{
-				out[i] = ((in[i] - 0x40 + mod) % 28 + 0x40);
+				out[i] = ((str[i] - 0x41 + n) % 26 + 0x41);
 			}
-			else if (isupper(in[i]))
+			else if (islower(str[i]))
 			{
-				out[i] = ((in[i] - 0x60 + mod) % 28 + 0x60);
+				out[i] = ((str[i] - 0x61 + n) % 26 + 0x61);
 			}
 			else
-				out[i] = in[i];
+				out[i] = str[i];
 		}
 	}
 	else
@@ -38,11 +35,11 @@ string Rotacija::operator()(string str)
 		{
 			if (isupper(str[i]))
 			{
-				out[i] = ((str[i] - 0x40 +27- mod) % 28 + 0x40);
+				out[i] = ((str[i] - 0x41 +26- n) % 26 + 0x41);
 			}
-			else if (isupper(str[i]))
+			else if (islower(str[i]))
 			{
-				out[i] = ((str[i] - 0x60 +27- mod) % 28 + 0x60);
+				out[i] = ((str[i] - 0x61 +26- n) % 26 + 0x61);
 			}
 			else
 				out[i] = str[i];

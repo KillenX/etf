@@ -6,9 +6,9 @@ using std::cin;
 int main()
 {
 	Rotacija rot(1, 3);
-	string test = "PROGRAMSKI JEZICI 1";
-	cout << rot;
-	cout << rot(test);
+	string test = "Srdjan Hajder";
+	cout << rot<<std::endl;
+	cout << rot(rot(test));
 
 
 	cin.ignore();
