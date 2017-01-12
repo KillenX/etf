@@ -15,18 +15,21 @@ int main(int argc,char** argv)
 	ofstream out;
 	int n;
 	char priv[100];
-
-	cout << "unesite rotacioni kljuc: ";
-	cin >> n;
-	Rotacija toCode(1,n),toText(0,n);
 	input.open(argv[1]);
 	out.open(argv[2]);
+	
+
+	cout << "Unesite rotacioni kljuc: ";
+	cin >> n;
+	Rotacija toCode(1,n);
+	
 	while (input.good())
 	{
 		input.getline(priv,99);
 		out << toCode(priv)<<"\n";
 	}
-
+	in.close();
+	out.close();
 	cin.ignore();
 	cin.get();
 	return 0;
