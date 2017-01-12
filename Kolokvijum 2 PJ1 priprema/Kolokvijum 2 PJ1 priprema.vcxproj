@@ -22,6 +22,7 @@
     <ProjectGuid>{65E5975E-6158-48D8-9E6A-AD40662C2887}</ProjectGuid>
     <RootNamespace>Kolokvijum2PJ1priprema</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+    <ProjectName>3.2.2012. K2</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -110,11 +111,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Array.cpp" />
     <ClCompile Include="Rotacija.cpp" />
     <ClCompile Include="Sifra.cpp" />
     <ClCompile Include="Source.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Array.h" />
     <ClInclude Include="Rotacija.h" />
     <ClInclude Include="Sifra.h" />
   </ItemGroup>

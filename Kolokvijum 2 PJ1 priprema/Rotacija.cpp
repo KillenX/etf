@@ -45,7 +45,7 @@ string Rotacija::operator()(string str)
 				out[i] = str[i];
 		}
 	}
-	mod = !mod;
+	
 		return out;
 	
 }
