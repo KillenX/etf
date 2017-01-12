@@ -28,7 +28,7 @@ int main(int argc,char** argv)
 		input.getline(priv,99);
 		out << toCode(priv)<<"\n";
 	}
-	in.close();
+	input.close();
 	out.close();
 	cin.ignore();
 	cin.get();
